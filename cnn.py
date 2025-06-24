@@ -74,7 +74,7 @@ class CNN(nn.Module):
     self.dropout = nn.Dropout(0.5)
     self.fc2 = nn.Linear(128, 2)
 
-  # Для сохранений активаций каждого слоя
+  # To save the activations of each layer
   #   self.activations = {}
   #   self._register_hooks()
 
@@ -171,7 +171,7 @@ def main():
       power=2)
 
 # --------------------------------------------------
-#                     Обучение
+#                     Education
 # --------------------------------------------------
   train_dataset = ASVDataset("/content/dataset/LA", 'train', mel_transform)
   train_dataloader = DataLoader(train_dataset, 32, shuffle=True)
@@ -200,7 +200,7 @@ def main():
   print(f"Time: {(end - start):.2f} sec")
 
 # --------------------------------------------------
-#                     Тестирование
+#                     Testing
 # --------------------------------------------------
   # test_dataset = ASVDataset("/content/dataset/LA", 'eval', mel_transform)
   # test_dataloader = DataLoader(test_dataset, 32, shuffle=False)

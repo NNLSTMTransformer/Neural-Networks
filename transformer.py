@@ -162,7 +162,7 @@ def main():
       )
 
 # --------------------------------------------------
-#                     Обучение
+#                     Education
 # --------------------------------------------------
   train_dataset = ASVDataset("/content/dataset/LA", 'train', mel_transform)
   train_dataloader = DataLoader(train_dataset, 32, shuffle=True)
@@ -191,7 +191,7 @@ def main():
   print(f"Time: {(end - start):.2f} sec")
 
 # --------------------------------------------------
-#                     Тестирование
+#                     Testing
 # --------------------------------------------------
   # test_dataset = ASVDataset("/content/dataset/LA", 'eval', mel_transform)
   # test_dataloader = DataLoader(test_dataset, 32, shuffle=False)
